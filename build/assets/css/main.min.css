@@ -343,5 +343,30 @@ hr {
   width: 100%;
   left: 0; }
 
-body {
-  background: pink; }
+#header {
+  background: url("../img/heroBackground.jpg") no-repeat;
+  background-size: cover;
+  height: 800px;
+  color: white;
+  text-align: center; }
+  #header .main-nav {
+    display: flex;
+    margin-top: 20px; }
+  #header li {
+    list-style: none; }
+  #header li:first-child {
+    margin-right: auto; }
+  #header a {
+    color: white;
+    display: block;
+    border-radius: 4px;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase; }
+  #header a.download {
+    background: white;
+    color: #00adff;
+    box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
+  #header .main-img {
+    width: 50%; }
