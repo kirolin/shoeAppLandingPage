@@ -278,7 +278,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .huge, h1 {
   font-size: 68px;
-  line-height: 1.05; }
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: white; }
   @media only screen and (max-width: 680px) {
     .huge, h1 {
       font-size: 44px; } }
@@ -346,16 +348,29 @@ hr {
 #header {
   background: url("../img/heroBackground.jpg") no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 700px;
   color: white;
-  text-align: center; }
+  text-align: center;
+  overflow: auto; }
+  #header img {
+    max-width: 500px;
+    width: 100%; }
+  #header article {
+    width: 60%;
+    margin: 0 auto; }
+  #header h1 {
+    margin-bottom: 0; }
   #header .main-nav {
     display: flex;
-    margin-top: 20px; }
+    margin-top: 20px;
+    padding: 0; }
   #header li {
     list-style: none; }
   #header li:first-child {
-    margin-right: auto; }
+    margin-right: auto;
+    padding: 10px 0; }
+    #header li:first-child a {
+      padding: 0; }
   #header a {
     color: white;
     display: block;
@@ -367,6 +382,5 @@ hr {
   #header a.download {
     background: white;
     color: #00adff;
-    box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
-  #header .main-img {
-    width: 50%; }
+    box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
+    margin-left: 25px; }
