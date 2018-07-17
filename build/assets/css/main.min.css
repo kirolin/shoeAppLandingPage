@@ -242,7 +242,7 @@ input[type="button"] {
     transform: translateY(3px); }
 
 a {
-  color: #0074D9;
+  color: #08B0FA;
   text-decoration: none;
   outline: 0; }
   a:hover, a:focus {
@@ -384,3 +384,38 @@ hr {
     color: #00adff;
     box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
     margin-left: 25px; }
+
+#bands ul {
+  margin: 0;
+  padding: 20px 0;
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(6, auto); }
+  @media only screen and (max-width: 550px) {
+    #bands ul {
+      grid-template-columns: repeat(3, auto); } }
+  #bands ul li {
+    list-style: none; }
+  #bands ul li img {
+    width: 100%; }
+
+#features {
+  background: #f9f9f9;
+  text-align: center; }
+  #features .cards {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 30px; }
+  #features .feature-card {
+    background: white;
+    padding: 30px 40px 10px 40px;
+    border-radius: 4px;
+    box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
+  #features h3 {
+    margin: 10px 0 0; }
+  #features .car {
+    border-top: 3px solid #41E0C1; }
+  #features .shoe {
+    border-top: 3px solid #4934E6; }
+  #features .device {
+    border-top: 3px solid #08B0FA; }
