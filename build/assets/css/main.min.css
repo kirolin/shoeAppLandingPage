@@ -344,23 +344,34 @@ hr {
     transform: skewY(-10deg);
     transform-origin: 100%;
     z-index: -1; }
+  #features h2 {
+    margin: 80px 0; }
   #features .cards {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 30px; }
-  #features h3 {
-    margin: 10px 0 0; }
   #features .feature-card {
     background: white;
     padding: 30px 40px 10px 40px;
     border-radius: 4px;
     box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
+    #features .feature-card h3 {
+      margin: 10px 0 0; }
   #features .car {
     border-top: 3px solid #41E0C1; }
   #features .shoe {
     border-top: 3px solid #4934E6; }
   #features .device {
     border-top: 3px solid #08B0FA; }
+
+#discount img {
+  max-width: 500px;
+  width: 100%; }
+
+.discountLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .flex-video {
   height: 0;
@@ -410,7 +421,6 @@ hr {
     display: block;
     border-radius: 4px;
     padding: 10px 50px;
-    text-decoration: none;
     font-weight: 900;
     text-transform: uppercase; }
   #header a.download {
